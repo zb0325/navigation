@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="asset/css/bc.css">
   <link rel="stylesheet" href="asset/css/css副本.css">
   <title>虚拟个人导航</title>
+<script language=javascript> 
+var t1 = new Date().getTime(); 
+</script>
 </head>
   <body>
   <!-- 加载动画 -->
@@ -175,11 +178,17 @@
 </div>
 <div class="bc-row bc-space10">
   <div class="bc-xs12">
-  <div class="bc_mbl bc_box" id="bc_foot">Copyright © 2025 虚拟印象 导航站点<span class="btn bc-hide-xs">收藏本站（快捷键<code>Ctrl+D</code>）</span></div>
+  <div class="bc_mbl bc_box" id="bc_foot">Copyright © 2025 虚拟印象 导航站点<span class="btn bc-hide-xs">收藏本站（快捷键<code>Ctrl+D</code>）</span><div id="TimeShow"></div></div>
 </div>
 </div>
 </div>
 </div>
-
+<SCRIPT LANGUAGE="JavaScript"> 
+window.onload = function() 
+{ 
+ document.getElementById("TimeShow").innerHTML = 
+"加载耗时  "+ (new Date().getTime()-t1) +" ms "; 
+} 
+</SCRIPT>
 </body>
 </html>
